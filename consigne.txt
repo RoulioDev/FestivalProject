@@ -1,0 +1,24 @@
+
+
+Une société responsable d’un certain nombre de festivals organisé sur le territoire national souhaite mettre en place un système d’information pour mieux gérer l’organisation.
+
+Pour chaque festival on connait le nom, la ville et la période (date de début et de fin) ou il a lieu. On sait aussi qu’il a lieu sur plusieurs journées.
+
+Pour chaque journée on connaît la date et la liste des concerts qui auront lieu ce jour-là.
+
+Pour chaque concert on connait le nom du groupe, l’heure prévue et la durée du concert.
+
+Un concert est donné par un groupe dont on connait le nom et le style de musique.
+
+Tous les groupes jouent lors du festival un certain nombre d’oeuvres musicales dont on connait le titre, le nom du compositeur, la date de création et la durée du morceau.
+
+
+
+
+Nos tables : 
+
+festival : nom , ville , période(date de début et de fin) , lieu
+jourvée :  date, liste concerts
+concert : nom_groupe, heure, durée
+groupe: nom, style de musique
+chanson : titre, nom_compositeur, date_creation, durée
