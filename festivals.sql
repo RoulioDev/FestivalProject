@@ -23,7 +23,8 @@ CREATE TABLE festival_concerts (
     oeuvre_compositeur VARCHAR(255),         
     oeuvre_date_creation DATE,              
     oeuvre_duree INT   
-    --commentaire                       
+    --commentaire    
+    --encore un commentaire
 );
 
 
