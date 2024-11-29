@@ -34,21 +34,39 @@ create table festival (
     date_debut DATE,
     date_fin DATE,
     lieu TEXT
-    Foreign Key (journee_id) REFERENCES ()
+    Foreign Key (journee_id) REFERENCES journee(journee_id)
 )
 
 create table journee (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    journee_id INTEGER PRIMARY KEY AUTOINCREMENT,
     date_journee DATE
+    Foreign Key (concert_id) REFERENCES concert(concert_id)
     
 )
 
 
 create table concert (
-    id integer primary key AUTO_INCREMENT,
+    concert_id integer primary key AUTO_INCREMENT,
     nom_groupe TEXT,
     heure TIME,
-    duree_concert INT
+    duree_concert INT,
+    Foreign Key nom_groupe REFERENCES groupe(nom_groupe)
+)
+
+
+create table groupe (
+    id integer primary key AUTO_INCREMENT,
+    nom_groupe TEXT,
+    style TEXT
+
+)
+
+create table chanson (
+    id integer primary key AUTO_INCREMENT,
+    titre TEXT,
+    compositeur TEXT,
+    date_creation DATE,
+    duree INT
 )
 
 
